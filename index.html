@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>IOC Test App</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>IoC Service Test App</h1>
+      <div id="how-works">
+        <h3>How it works</h3>
+        <p>
+          This app works by redirecting requests across a variety of services
+          using only a single API route.
+        </p>
+        <p>
+          The route's behavior is manipulated via dependency injection
+          orchestrated by an IoC container.
+        </p>
+      </div>
+    </div>
+
+    <div id="root">
+      <div id="app">
+        <div id="service">
+          <label for="ioc-services">Choose a service: </label>
+          <select name="ioc-services" id="ioc-services"></select>
+        </div>
+        <div id="to-send">
+          <textarea name="" id="text-content" cols="50" rows="4"></textarea>
+        </div>
+      </div>
+
+      <button id="send-button">Send</button>
+    </div>
+
+    <div id="response">
+      <p id="response-field"></p>
+    </div>
+  </body>
+</html>
