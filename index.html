@@ -13,11 +13,11 @@
       <div id="how-works">
         <h3>How it works</h3>
         <p>
-          This app works by redirecting requests across a variety of services
-          using only a single API route.
+          This app sends text to the server, which processes it and generates a
+          response using a single API route.
         </p>
         <p>
-          The route's behavior is manipulated via dependency injection
+          The behavior of the server is manipulated via dependency injection
           orchestrated by an IoC container.
         </p>
       </div>
@@ -62,7 +62,6 @@
             document.querySelector('#response-field').textContent = text;
           });
       };
-
       // 3.0 Inject a new dependency every time another option is chosen
       const select = document.querySelector('#ioc-services');
       select.onchange = () => {
